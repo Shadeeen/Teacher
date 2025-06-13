@@ -1,6 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scheduleFragmentLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".TeacherSchedule">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/scheduleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher schedule:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif"/>
+
+            <TableLayout
+                android:id="@+id/scheduleTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4,5"
+                android:background="@android:color/white">
+
+
+                <TableRow>
+                    <TextView android:text="time_day" style="@style/table" />
+                    <TextView android:text="mon" style="@style/table"  />
+                    <TextView android:text="tue"  style="@style/table"  />
+                    <TextView android:text="wed"  style="@style/table" />
+                    <TextView android:text="thu"  style="@style/table"  />
+                    <TextView android:text="sat"  style="@style/table" />
+                </TableRow>
+
+
+                <TableRow  android:background="@drawable/row">
+
+                    <TextView android:text="08:00-08:40" style="@style/table"/>
+                    <TextView
+                        android:id="@+id/mon_0"
+                        style="@style/row_style" />
+                    <TextView
+                        android:id="@+id/tue_0"
+                        style="@style/row_style" />
+                    <TextView
+                        android:id="@+id/wed_0"
+                        style="@style/row_style" />
+                    <TextView
+                        android:id="@+id/thu_0"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/sat_0"
+                        style="@style/row_style"/>
+                </TableRow>
+
+                <TableRow  android:background="@drawable/row">
+                    <TextView android:text="08:45-09:25" style="@style/table" />
+                    <TextView
+                        android:id="@+id/mon_1"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/tue_1"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/wed_1"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/thu_1"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/sat_1"
+                        style="@style/row_style"/>
+                </TableRow>
+
+                <TableRow     android:background="@drawable/row">
+                    <TextView android:text="09:30-10:10" style="@style/table"/>
+                    <TextView
+                        android:id="@+id/mon_2"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/tue_2"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/wed_2"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/thu_2"
+                        style="@style/row_style"/>
+                    <TextView
+                        android:id="@+id/sat_2"
+                        style="@style/row_style"/>
+                </TableRow>
+
+                <TableRow android:background="@drawable/row">
+                    <TextView android:text="10:15-10:55" style="@style/table" />
+                    <TextView android:id="@+id/mon_3"   style="@style/row_style" />
+                    <TextView android:id="@+id/tue_3"   style="@style/row_style"/>
+                    <TextView android:id="@+id/wed_3"  style="@style/row_style" />
+                    <TextView android:id="@+id/thu_3"  style="@style/row_style"/>
+                    <TextView android:id="@+id/sat_3"   style="@style/row_style"/>
+                </TableRow>
+
+                <TableRow   android:background="@drawable/row">
+                    <TextView android:text="11:00-11:40" style="@style/table"/>
+                    <TextView android:id="@+id/mon_4"   style="@style/row_style" />
+                    <TextView android:id="@+id/tue_4"   style="@style/row_style" />
+                    <TextView android:id="@+id/wed_4"   style="@style/row_style" />
+                    <TextView android:id="@+id/thu_4"   style="@style/row_style"/>
+                    <TextView android:id="@+id/sat_4"   style="@style/row_style"/>
+                </TableRow>
+
+                <TableRow   android:background="@drawable/row">
+                    <TextView android:text="11:45-12:25" style="@style/table" />
+                    <TextView android:id="@+id/mon_5"   style="@style/row_style" />
+                    <TextView android:id="@+id/tue_5"   style="@style/row_style" />
+                    <TextView android:id="@+id/wed_5"  style="@style/row_style" />
+                    <TextView android:id="@+id/thu_5"   style="@style/row_style" />
+                    <TextView android:id="@+id/sat_5"   style="@style/row_style" />
+                </TableRow>
+
+                <!-- Row 7 -->
+                <TableRow   android:background="@drawable/row">
+                    <TextView android:text="12:30-13:10" style="@style/table"  />
+                    <TextView android:id="@+id/mon_6"   style="@style/row_style" />
+                    <TextView android:id="@+id/tue_6"   style="@style/row_style" />
+                    <TextView android:id="@+id/wed_6"   style="@style/row_style" />
+                    <TextView android:id="@+id/thu_6"   style="@style/row_style"/>
+                    <TextView android:id="@+id/sat_6"   style="@style/row_style" />
+                </TableRow>
+
+                <!-- Row 8 -->
+                <TableRow  android:background="@drawable/row">
+                    <TextView android:text="13:15-13:55" style="@style/table" />
+                    <TextView android:id="@+id/mon_7"   style="@style/row_style" />
+                    <TextView android:id="@+id/tue_7"   style="@style/row_style" />
+                    <TextView android:id="@+id/wed_7"   style="@style/row_style" />
+                    <TextView android:id="@+id/thu_7"   style="@style/row_style" />
+                    <TextView android:id="@+id/sat_7"   style="@style/row_style" />
+                </TableRow>
+            </TableLayout>
+            <!-- Space -->
+            <View android:layout_height="24dp" android:layout_width="match_parent" />
+
+            <!-- Teacher-Subject-Class Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Subjects Alias:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif"/>
+
+            <LinearLayout
+                android:id="@+id/teacherSubjectList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Space -->
+            <View android:layout_height="10dp" android:layout_width="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

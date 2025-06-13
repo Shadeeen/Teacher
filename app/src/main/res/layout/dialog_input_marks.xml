@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/midText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mid-Term Marks"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/midMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textColorHint="#000000"
+        android:hint="Enter Mid-Term Marks"/>
+
+    <TextView
+        android:id="@+id/assignmentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment Marks"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/assignmentMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter Assignment Marks"
+        android:textSize="18sp"
+        android:textColorHint="#000000"/>
+
+    <TextView
+        android:id="@+id/finalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Marks"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/finalMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textColorHint="#000000"
+        android:hint="Enter Final Marks"/>
+
+</LinearLayout>
