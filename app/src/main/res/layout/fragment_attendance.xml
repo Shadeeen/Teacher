@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F8FD"
+    android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance"
+            android:textColor="#052659"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
+           />
+
+
+    <!-- Current Date Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDE0F6"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today:"
+            android:fontFamily="serif"
+            android:textColor="#052659"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#052659"
+            android:textSize="16sp"
+            android:text="May 15, 2023"
+            android:fontFamily="serif"/>
+    </LinearLayout>
+
+    <!-- Attendance List (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attendance_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+  />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#052659"
+        android:text="Submit Attendance"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
